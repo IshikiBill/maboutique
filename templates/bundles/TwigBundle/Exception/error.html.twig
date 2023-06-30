@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page introuvable - Ishiki Shop
+{% endblock %}
+
+{% block content %}
+	<div class="block-small">
+    <h2>Page introuvable</h2>
+    <p>Désolé, cette page ne semble être accéssible pour le moment, merci pour votre compréhension.</p>
+    <a href="{{ path('app_home') }}" class= "btn btn-info"> Retour à l'acceuil</a>
+	</div>
+{% endblock %}
