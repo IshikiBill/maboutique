@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Classe\Mail;
+use App\Classe\Mailjet;
 use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,7 +21,7 @@ class ContactController extends AbstractController
 
 
             $this->addFlash('notice', 'Merci de nous avoir contacté. Notre équipe va vous répondre dans les plus bref délais.');
-            //$mail = new Mail();
+            //$mail = new Mailjet();
             //$mail->send('', 'Ishiki-shop', 'Vous avez reç une nouvelle demande de contact....')
 
             //dd($form->getData());

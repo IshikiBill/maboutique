@@ -2,7 +2,8 @@
 
 namespace App\Controller;
 
-use App\Classe\Mail;
+
+use App\Classe\Mailjet;
 use App\Entity\User;
 use App\Entity\ResetPassword;
 use App\Form\ResetPasswordType;
@@ -52,7 +53,7 @@ class ResetPasswordController extends AbstractController
         $content = "Bonjour " . $user->getFirstname() . "</br> Vous avez demandé à reinitialiser votre mot de passe sur le site La boutique Ishiki-shop.</br></br>";
         $content .= "Merci de bien vouloir cliquer sur le lien suivant pour <a href='" . $url . "'> mettre à jour votre mot de passe.</a>";
 
-        $mail = new Mail();
+        $mail = new Mailjet();
         $mail->send($user->getEmail(), $user->getFirstname() . ' ' . $user->getLastname(), 'Reinitialiser votre mot de passe sur Ishiki-shop', $content);
 
 
@@ -82,7 +83,7 @@ class ResetPasswordController extends AbstractController
     // verifier si le createdAt = now - 3h
     $now = new \DateTimeImmutable();
 
-    if ($now > $reset_password->getCreatedAt()->modify('+ 3 hour')); {
+    if ($now > $reset_password->getCreatedAt()->modify('+ 3 hour')) {
       $this->addFlash('notice', 'Votre demande de mot de passe a expiré. Merci de le renouveller.');
       return $this->redirectToRoute('reset_password');
     }

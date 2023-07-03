@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Classe\Cart;
-use App\Classe\Mail;
+use App\Classe\Mailjet;
 use App\Entity\Order;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
@@ -36,7 +36,7 @@ class OrderSuccesController extends AbstractController
             $this->entityManager->flush();
 
 
-            $mail = new Mail();
+            $mail = new Mailjet();
                 $content = "Bonjour".$order->getUser()->getFirstname()."<br/>Merci pour votre commande.<br><br/>";
                 $mail->send($order->getUser()->getEmail(), $order->getUser()->getFirstname(), 'Votre commande  Ishiki-shop est bien validé.', $content);
         }

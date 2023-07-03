@@ -4,12 +4,12 @@ namespace App\Classe;
 use Mailjet\Client;
 use Mailjet\Resources;
 
-class Mail
+class Mailjet
 {
 
    
-    private $api_key = 'db772bc6bf1e83f6376804c9f4d8611f';
-    private $api_key_secret = '2b57b2a27423d2b05660d5a8bbcd0f80';
+    private $api_key = '70ebd43e6a01017368db80377b7717b0'; 
+    private $api_key_secret = '70ebd43e6a01017368db80377b7717b0';
 
     public function send($to_email, $to_name , $subject, $content)
     {
