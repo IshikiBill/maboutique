@@ -71,7 +71,7 @@
 
 {% block script %}
 <script type="text/javascript"> 
-var stripe = Stripe("pk_test_51MsQUnBl7zQXuCnoyB9wFEBbE9IhOadOlG86faWt4xwgxm9y5Xv68TTiIVq3lNfVkoiql4639rhh6OSTfCEK8lJj00V4cyrVe5");
+var stripe = Stripe("{{ apikeypublic }}");
 var checkoutButton = document.getElementById("checkout-button");
 
 checkoutButton.addEventListener("click", function () {

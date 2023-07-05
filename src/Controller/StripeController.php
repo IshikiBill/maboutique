@@ -63,7 +63,7 @@ class StripeController extends AbstractController
 
             
 
-        Stripe::setApiKey('sk_test_51MsQUnBl7zQXuCnoloCqdgsj38L6TTB0sUjl2vTaTULcDt22YqnPy6SCzmdSkucA14t2QFH6Ks1UtJ6y0uiMZ9HW00indZ6mIG');
+        Stripe::setApiKey($_ENV['STRIPE_SECRET_KEY_TEST1']);
             
 
                
