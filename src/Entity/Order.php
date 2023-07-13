@@ -44,9 +44,6 @@ class Order
     #[ORM\OneToMany(mappedBy: 'myOrder', targetEntity: OrderDetails::class)]
     private Collection $orderDetails;
 
-    #[ORM\Column]
-    private ?bool $isPaid = null;
-
     #[ORM\Column(length: 255)]
     private ?string $reference = null;
 
@@ -175,22 +172,6 @@ class Order
         return $this;
     }
 
-    public function isIsPaid(): ?bool
-    {
-        return $this->isPaid;
-    }
-
-    public function getIsPaid(): ?bool
-    {
-        return $this->isPaid;
-    }
-
-    public function setIsPaid(bool $isPaid): self
-    {
-        $this->isPaid = $isPaid;
-
-        return $this;
-    }
 
     public function getReference(): ?string
     {

@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Classe\Mailjet;
+use App\Classe\Mail;
 use App\Entity\User;
 use App\Form\RegisterType;
 use Doctrine\ORM\EntityManagerInterface;
@@ -43,7 +43,7 @@ class RegisterController extends AbstractController
             $this->entityManager->persist($user);
             $this->entityManager->flush();
 
-                $mail = new Mailjet();
+                $mail = new Mail();
                 $content = "Bonjour".$user->getFirstname()."<br/>Bienvenue sur Ishiki-shop, une boutique de lithothérapie.<br><br/>";
                 $mail->send($user->getEmail(), $user->getFirstname(), 'Bienvenue sur Ishiki-shop', $content);
 

@@ -13,13 +13,11 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ArrayField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
-use Symfony\Component\Routing\Generator\UrlGenerator;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
-use Symfony\Bundle\FrameworkBundle\Routing\Router;
 
 class OrderCrudController extends AbstractCrudController
 {
@@ -96,8 +94,6 @@ class OrderCrudController extends AbstractCrudController
             MoneyField::new('total', 'Total produit')->setCurrency('EUR'),
             TextField::new('carrierName', 'Transporteur'),
             MoneyField::new('carrierPrice', 'Frais de port')->setCurrency('EUR'),
-            //BooleanField::new('isPaid', 'Payée'),
-
             ChoiceField::new('state')->setChoices([
                 'Non payée '=> 0,
                 'payé' => 1,
