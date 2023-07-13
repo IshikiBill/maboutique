@@ -70,7 +70,7 @@ class ResetPasswordController extends AbstractController
 
   #[Route('/modifier-mon-mot-de-passe/{token}', name: 'update_password')]
 
-  public function update(Request $request, UserPasswordHasherInterface $encoder, $token): Response
+  public function update(Request $request, $token , UserPasswordHasherInterface $encoder): Response
   {
 
 
@@ -84,7 +84,7 @@ class ResetPasswordController extends AbstractController
     $now = new \DateTimeImmutable();
 
     if ($now > $reset_password->getCreatedAt()->modify('+ 3 hour')) {
-      $this->addFlash('notice', 'Votre demande de mot de passe a expiré. Merci de le renouveller.');
+      $this->addFlash('notice', 'Votre demande de mot de passe a expiré. Merci de la renouveller.');
       return $this->redirectToRoute('reset_password');
     }
 
