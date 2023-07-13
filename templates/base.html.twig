@@ -36,7 +36,7 @@
 						<a class="nav-link" href="{{ path('app_products') }}">Nos produits</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Qui sommes-nous?</a>
+						<a class="nav-link" href="{{ path ('app_ishiki')}}">Qui sommes-nous?</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link" href="{{ path('contact') }}">Contact</a>
@@ -145,8 +145,8 @@
         <footer class="footer-custom">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#">CGV</a>
-                <a href="#"> | Politique de confidentialité</a>
+                <a href="{{ path ('app_cgv')}}">CGV</a>  
+                <a href="{{ path ('app_pdc')}}"> | Politique de confidentialité</a>
                 <!-- Ajoutez les autres liens souhaités ici -->
             </div>
             <div class="footer-social">
@@ -169,7 +169,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="{{ path ('app_account_order')}}">
             <img src="chemin_vers_l_image2.jpg" alt="Suivi de commande"> 
           </a>
         </li>
