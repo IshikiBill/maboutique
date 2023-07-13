@@ -8,8 +8,8 @@ class Mail
 {
 
    
-    private $api_key = 'db772bc6bf1e83f6376804c9f4d8611f'; 
-    private $api_key_secret = 'ac6e8f55227b950257ae5b4ab6848ec4';
+    private $api_key = '0f10b28cdecdb17d76723c7eae41328f'; 
+    private $api_key_secret = '5e17a613259bd8483c809f599b3b1f82';
 
     public function send($to_email, $to_name , $subject, $content)
     {
