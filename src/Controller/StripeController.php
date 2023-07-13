@@ -19,7 +19,7 @@ class StripeController extends AbstractController
     {
 
         $products_for_stripe = [];
-            $YOUR_DOMAIN = 'http://127.0.0.1:8000'; // pour l'instant c'est en local
+            $YOUR_DOMAIN = 'http://ishiki.fr'; // pour l'instant c'est en local
             // le domaine sera https://www.Ishiki-shop.fr/uploads/
             $order = $entityManager->getRepository(Order::class)->findOneByreference($reference);
 
