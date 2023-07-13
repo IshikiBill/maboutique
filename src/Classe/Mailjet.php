@@ -19,7 +19,7 @@ $body = [
     'Messages' => [
         [
             'From' => [
-                'Email' => "igornaomie@gmail.com",
+                'Email' => "contact@ishiki.fr",
                 'Name' => "Ishiki-shop"
             ],
             'To' => [

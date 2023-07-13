@@ -124,4 +124,31 @@ body {
     text-decoration: none;
     
 }
+
+
+    body {
+        background-color: #faebfc; /* Couleur de fond */
+    }
+
+
+    .product-item {
+        background-color: #faebfc; /* Couleur de fond des éléments de produit */
+    }
+
+    .form-check {
+        background-color: #faebfc; /* Couleur de fond des cases à cocher */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre des cases à cocher */
+    }
+
+    .order-summary {
+        background-color: #faebfc; /* Couleur de fond du récapitulatif de commande */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre du récapitulatif de commande */
+    }
+
+    .account-item {
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre des éléments de compte */
+    }
 }
+
+

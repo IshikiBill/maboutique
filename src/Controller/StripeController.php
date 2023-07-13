@@ -8,7 +8,6 @@ use App\Entity\Order;
 use App\Entity\Product;
 use Stripe\Checkout\Session;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -21,7 +20,7 @@ class StripeController extends AbstractController
 
         $products_for_stripe = [];
             $YOUR_DOMAIN = 'http://127.0.0.1:8000'; // pour l'instant c'est en local
-            // le domaine sera https://www.Ishiki-shop.com/uploads/
+            // le domaine sera https://www.Ishiki-shop.fr/uploads/
             $order = $entityManager->getRepository(Order::class)->findOneByreference($reference);
 
             if(!$order){
@@ -42,7 +41,7 @@ class StripeController extends AbstractController
                             'name'=> $product->getProduct(),
                             'images'=> [$YOUR_DOMAIN."/uploads/".$product_object->getIllustration()],
                         ],
-                    ],
+                    ], 
                     'quantity' => $product->getQuantity(),
                 ];
             }
@@ -85,6 +84,7 @@ class StripeController extends AbstractController
         $entityManager->flush();
 
         $response = new JsonResponse(['id'=> $checkout_session->id]);
-        return $response;
+        return $response; 
     }
 }
+

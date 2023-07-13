@@ -5,32 +5,34 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
+    --blue: #007bff;                /* Couleur bleue */
+    --indigo: #6610f2;              /* Couleur indigo */
+    --purple: #6f42c1;              /* Couleur violette */
+    --pink: #e83e8c;                /* Couleur rose */
+    --red: #dc3545;                 /* Couleur rouge */
+    --orange: #fd7e14;              /* Couleur orange */
+    --yellow: #ffc107;              /* Couleur jaune */
+    --green: #28a745;               /* Couleur verte */
+    --teal: #20c997;                /* Couleur bleu-vert */
+    --cyan: #17a2b8;                /* Couleur cyan */
+    --white: #fff;                  /* Couleur blanche */
+    --gray: #6c757d;                /* Couleur grise */
+    --gray-dark: #343a40;           /* Couleur grise foncée */
+    --primary: #007bff;             /* Couleur primaire */
+    --secondary: #6c757d;           /* Couleur secondaire */
+    --success: #28a745;             /* Couleur de succès */
+    --info: #17a2b8;                /* Couleur d'information */
+    --warning: #ffc107;             /* Couleur d'avertissement */
+    --danger: #dc3545;              /* Couleur de danger */
+    --light: #f8f9fa;               /* Couleur claire */
+    --dark: #343a40;                /* Couleur foncée */
+
+    /* Breakpoints */
+    --breakpoint-xs: 0;             /* Breakpoint XS */
+    --breakpoint-sm: 576px;         /* Breakpoint SM */
+    --breakpoint-md: 768px;         /* Breakpoint MD */
+    --breakpoint-lg: 992px;         /* Breakpoint LG */
+    --breakpoint-xl: 1200px;        /* Breakpoint XL */
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }

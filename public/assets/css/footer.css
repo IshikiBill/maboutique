@@ -1,0 +1,59 @@
+.footer-custom {
+    background-color: #9598f7; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    font-size: 14px; /* Taille de police du pied de page */
+}
+
+.footer-custom .footer-content {
+    display: flex; /* Afficher les éléments en ligne */
+    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+    justify-content: space-between; /* Répartir les éléments horizontalement */
+    align-items: flex-start; /* Aligner les éléments en haut de la div */
+    padding: 20px; /* Espacement interne des éléments */
+    background-color: #9598f7;
+}
+
+.footer-custom .footer-content > div {
+    flex-basis: calc(33.33% - 10px); /* Largeur de chaque élément */
+    margin-bottom: 20px; /* Marge inférieure entre les éléments */
+}
+
+.footer-custom p {
+    margin-bottom: 5px; /* Marge inférieure des paragraphes */
+}
+
+.footer-custom .footer-links a,
+.footer-custom .footer-social a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Style de soulignement des liens */
+}
+
+.footer-custom .footer-links a:hover,
+.footer-custom .footer-social a:hover {
+    text-decoration: underline; /* Style de soulignement des liens au survol */
+}
+
+.footer-custom .footer-newsletter form {
+    display: flex; /* Afficher les éléments du formulaire en ligne */
+}
+
+.footer-custom .footer-newsletter input[type="email"] {
+    width: 200px; /* Largeur de l'input de l'adresse e-mail */
+    padding: 5px; /* Espacement interne de l'input de l'adresse e-mail */
+    border: 1px solid #ffffff; /* Bordure de l'input de l'adresse e-mail */
+    border-radius: 3px; /* Bord arrondi de l'input de l'adresse e-mail */
+    margin-left: auto;
+}
+
+.footer-custom .footer-newsletter button[type="submit"] {
+    background-color: #9598f7; /* Couleur de fond du bouton d'inscription */
+    color: white; /* Couleur du texte du bouton d'inscription */
+    border: none; /* Supprimer la bordure du bouton d'inscription */
+    padding: 5px 10px; /* Espacement interne du bouton d'inscription */
+    margin-left: 10px; /* Marge gauche du bouton d'inscription */
+    cursor: pointer; /* Curseur au survol du bouton d'inscription */
+}
+
+.footer-assistance li {
+    list-style-position: inside;
+  }

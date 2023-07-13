@@ -8,6 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AccountController extends AbstractController
 {
+    /**
+     * Affiche la page du compte utilisateur
+     */
     #[Route('/compte', name: 'app_account')]
     public function index(): Response
     {
